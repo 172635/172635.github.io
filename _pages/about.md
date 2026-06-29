@@ -14,7 +14,7 @@ profile:
     <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -26,6 +26,19 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+<style>
+  .post-title, .about h1 {
+    font-size: 1.7rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .profile img {
+    max-width: 150px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+</style>
+
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
