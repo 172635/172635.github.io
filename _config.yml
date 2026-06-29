@@ -161,16 +161,17 @@ disqus_shortname: # al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+###### by 172635
+  # - name: medium.com
+  #   rss_url: https://medium.com/@al-folio/feed
+  #   categories: [external-posts]
+  #   tags: [medium]
+  # - name: Google Blog
+  #   posts:
+  #     - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+  #       published_date: 2024-05-14
+  #   categories: [external-posts]
+  #   tags: [google]
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -240,7 +241,7 @@ exclude:
   - gems/
   - migrations/
   - vendor
-  - _pages_backup     ########### by 172635
+  - examples     ########### by 172635
 keep_files:
   - CNAME
   - .nojekyll
@@ -343,8 +344,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Yi]
+  first_name: [Hojun]
 
   style: apa
   locale: en
