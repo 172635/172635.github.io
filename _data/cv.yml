@@ -11,7 +11,7 @@ cv:
     - network: GitHub
       username: '172635'
   sections:
-    research interest:
+    Research Interest:
       - name: 'Research Question'
         highlights:
         - 'How to develop a general intelligence agent that leverages pretrained knowledge or preferences to autonomously discover underlying rules and logics in unseen tasks and robustly adapt to Out-Of-Distribution environments?'
@@ -22,7 +22,7 @@ cv:
         - Multi Objective RL, Quality-Diversity(QD) Optimization
         - Optimal Transport, Generative Policy Modeling via Flow Matching
 
-    education:
+    Education:
       - institution: Gwangju Institute of Science and Technology (GIST)
         area: ''
         degree: BS
@@ -36,7 +36,7 @@ cv:
           - 'Total: 4.16/4.5, Electrical Engineering and Computer Science(Major): 4.32'
           - 'Mathematical Sciences(Double Major): 4.20'
           - 'Expected Cum Laude graduation in Aug 2027'
-    publications:
+    Publications:
       - title: 'TRACED: Transition-aware Regret Approximation with Co-learnability for Environment Design'
         authors:
           - G. Cho
@@ -57,7 +57,7 @@ cv:
           - S. Kim
         url: https://openreview.net/pdf?id=vyWu5mz4x0
         journal: ICML workshop 2026
-    experience:
+    Experience:
       - company: DataScience Lab
         position: Undergraduated Research Intern
         date:
@@ -69,7 +69,7 @@ cv:
           - 'Conducting Research on Open-Endedness, Unsupervised RL'
           - 'Studied Math for ML, Probabilistic ML'
           - 'lightning talk about TRACED on CoRL workshop 2025'
-    awards and honors:
+    Awards and honors:
       - name: 2024 ICPC Seoul Regional - 63rd
         date: 2024-11
       - name: 2024 GIST Algorithm Masters - 1st
@@ -105,7 +105,7 @@ cv:
     # extracurricular_activities:
     #   - bullet: 'There are 7 unique entry types in RenderCV: *BulletEntry*, *TextEntry*, *EducationEntry*, *ExperienceEntry*, *NormalEntry*, *PublicationEntry*, and *OneLineEntry*.'
     #   - bullet: Each entry type has a different structure and layout. This document demonstrates all of them.
-    selected courseworks:
+    Selected courseworks:
       - label: Mathematics
         details: Multivariable Calculus, Linear Algebra, Differential Equations, Real Analysis(2026S), Automata Theory, Discrete Mathematics, Random Process, Deep Learning Theory(2026S)
       - label: Computer Science
