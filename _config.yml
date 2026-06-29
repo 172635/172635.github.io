@@ -241,7 +241,7 @@ exclude:
   - gems/
   - migrations/
   - vendor
-  - examples/     ########### by 172635
+  - _examples/     ########### by 172635
 keep_files:
   - CNAME
   - .nojekyll
