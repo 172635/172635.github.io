@@ -2,20 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: >
-  Undergraduate Researcher <br>
-  <a href="https://sundong.kim/publications/">DS Lab</a> (PI: Sundong Kim) GIST, South Korea
+subtitle: ""
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: #prof_pic.jpg
   image_circular: true # crops the image to make it circular
-  more_info: >
-    # <p>555 your office number</p>
-    # <p>123 your address street</p>
-    # <p>Your City, State 12345</p>
+  more_info: ""
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
 announcements:
@@ -59,8 +54,7 @@ latest_posts:
     --text-base-color: #c9d1d9;
   }
   
-  
-.profile-links {
+  .profile-links {
     margin-top: 15px;
     margin-bottom: 20px;
     display: flex;
@@ -130,34 +124,63 @@ latest_posts:
   }
 </style>
 
-NEED TO UPDATE (about.md & cv.md & cv.yml & example.pdf(CV) & socials.yml)
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello, I am a fourth-year undergraduate student majoring in **Computer Science** and **Mathematical Sciences** at the Gwangju Institute of Science and Technology (GIST). I am currently working as an undergraduated researcher in the <a href="https://sundong.kim/publications/">DataScience Lab</a>, advised by Prof. Sundong Kim.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My ultimate research goal is to realize robust **Artificial General Intelligence (AGI)** capable of autonomously analyzing underlying rules and adapting to unseen out-of-distribution (OOD) environments by leveraging prior knowledge and preference/dispreference awareness. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+To achieve this, my current research interests include below two core directions:
+
+##### 1. Autonomous Exploration & Continual Learning in RL
+To maximize agent autonomy and learning efficiency, focusing on how agents can adapt smoothly with minimal data.
+* **Unsupervised Environment Design (UED)**: Developing highly efficient agent architectures that autonomously generate curriculum frameworks based on environmental difficulty and data distribution.
+* **Mitigating Catastrophic Forgetting**: Utilizing **Optimal Transport (OT)** theory and **Flow Policies** to enhance policy and data transfer efficiency across diverse environmental distributions, enabling sustainable knowledge expansion.
+
+##### 2. Geometric Foundations of Latent Spaces & Explainable AI
+To clarify the semantic relationships and complex rules embedded within high-dimensional data, connect linguistic/semantic consensus with the geometric structures of latent spaces.
+* **Statistical Manifolds & Information Geometry**: Moving beyond Euclidean spaces, model latent representations as statistical manifolds. By applying topology and information geometry, mathematically define the curvature and metrics of probability distributions.
+* **Mathematical Causality & Interpretability**: By constructing abstract semantics based on geometric structures, provide interpretability and causality for decision-making systems.
+
+Ultimately, I aim to break through the current limitations of AI by leveraging on mathematical logic.
 
 
-<div class="profile-links">
-  <a href="mailto:hojun172@gm.gist.ac.kr"><i class="fas fa-envelope"></i> hojun172@gm.gist.ac.kr</a>
-  <a href="mailto:hojun172635@gmail.com"><i class="fab fa-google"></i> Gmail</a>
-  <a href="https://github.com/172635" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-  <!-- <a href="https://orcid.org/your-id" target="_blank"><i class="ai ai-orcid"></i> ORCID</a> -->
-  <a href="https://scholar.google.com/citations?user=92gRj0wAAAAJ"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+
+<p style="text-align: center;">I am always open to intellectual discussions and exchanging ideas-feel free to reach out!</p>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <div>
+    <a href="mailto:hojun172@gm.gist.ac.kr">Mail</a> &#124; 
+    <a href="/assets/pdf/Hojun_Yi_CV.pdf" target="_blank">CV</a> &#124; 
+    <a href="https://github.com/172635" target="_blank">GitHub</a> &#124; 
+    <a href="https://scholar.google.com/citations?user=92gRj0wAAAAJ" target="_blank">Google Scholar</a>
+  </div>
 </div>
 
-## About
+## Education
 
-<!-- I'm a fourth-year student at **GIST**, and I do research in the **DS Lab**. I like teaching computers to learn from data, and lately I've gotten curious about how the brain and the mind work, because that can help us build AI that acts more like a person. Before this, I worked in the Language Cognition and Brain Lab (LCBL). -->
+* **B.S. in Electrical Engineering and Computer Science** GIST(Gwangju Institute of Science and Technology) <span style="float: right;">*2023 - Present*</span>
+  * Expected Cum Laude graduation in Aug 2027, Total GPA: 4.16/4.5
+  * Major(EECS) GPA: 4.32, Double Major(Mathematical Sciences): 4.20
 
-## Research Interests
+## Experience
+* **Undergraduated Research Intern** - DataScience Lab (Advised by Prof. Sundong Kim) in GIST <span style="float: right;">*2025 - Present*</span>
+  * Conducting Research on Open-Endedness, Unsupervised RL
+  * Studied Math for ML, Probabilistic ML
+  * Lightning talk about TRACED on CoRL workshop 2025
 
-<div class="interest-tags">
-  <span class="interest-tag">Human-like AI</span>
-  <span class="interest-tag">Self & Motivation</span>
-  <span class="interest-tag">Artificial Intelligence</span>
-  <span class="interest-tag">Deep Learning</span>
-  <span class="interest-tag">Statistics</span>
-  <span class="interest-tag">Reinforcement Learning</span>
-  <span class="interest-tag">Neuroscience</span>
-</div>
+## Selected Publications
+<span style="float: right; margin-top: -35px;"><a href="/publications/" class="btn btn-sm z-depth-1" role="button" style="color: var(--global-theme-color); text-transform: none; font-size: 0.85rem;">All Publications <i class="fas fa-arrow-right"></i></a></span>
+
+* TRACED: Transition-aware Regret Approximation with Co-learnability for Environment Design
+  * Authors : G. Cho, J. Im, J. Lee, ***H. Yi***, S. Kim, S. Kim
+  * <a href="https://iclr.cc/virtual/2026/poster/10010241">ICLR 2026</a>, CoRL workshop 2025
+  * [[Arxiv]]("https://arxiv.org/pdf/2506.19997") [[Code]]("https://github.com/Cho-Geonwoo/traced") [[Website]]("https://geonwoo.me/traced/")
+
+
+## Awards and honors:
+* 2024 ICPC Seoul Regional - 63rd <span style="float: right;">*2024-11*</span>
+* 2024 GIST Algorithm Masters - 1st <span style="float: right;">*2024-05*</span>
+* Hello, BOJ 2024! - 45th <span style="float: right;">*2024-01*</span>
+* 2023 ICPC Seoul Regional - 49th <span style="float: right;">*2023-11*</span>
+* Academic Excellence Scholarship (GIST) <span style="float: right;">*2023 - 2025*</span>
+* Government Sponsored Scholarship (GIST) <span style="float: right;">*2023 - Present*</span>
+    

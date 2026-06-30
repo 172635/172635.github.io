@@ -36,6 +36,7 @@ cv:
           - 'Total: 4.16/4.5, Electrical Engineering and Computer Science(Major): 4.32'
           - 'Mathematical Sciences(Double Major): 4.20'
           - 'Expected Cum Laude graduation in Aug 2027'
+    
     Publications:
       - title: 'TRACED: Transition-aware Regret Approximation with Co-learnability for Environment Design'
         authors:
@@ -57,6 +58,7 @@ cv:
           - S. Kim
         url: https://openreview.net/pdf?id=vyWu5mz4x0
         journal: ICML workshop 2026
+    
     Experience:
       - company: DataScience Lab
         position: Undergraduated Research Intern
@@ -69,6 +71,7 @@ cv:
           - 'Conducting Research on Open-Endedness, Unsupervised RL'
           - 'Studied Math for ML, Probabilistic ML'
           - 'lightning talk about TRACED on CoRL workshop 2025'
+    
     Awards and honors:
       - name: 2024 ICPC Seoul Regional - 63rd
         date: 2024-11
@@ -84,6 +87,7 @@ cv:
         date:
         start_date: 2023-02
         end_date: present
+    
     # projects:
     #   - name: '[Example Project](https://example.com)'
     #     date:
@@ -110,6 +114,7 @@ cv:
         details: Multivariable Calculus, Linear Algebra, Differential Equations, Real Analysis(2026S), Automata Theory, Discrete Mathematics, Random Process, Deep Learning Theory(2026S)
       - label: Computer Science
         details: Computer Architecture, System Programming, Signals and Systems, Programming Languages and Compilers, Software Engineering, Machine Learning and Deep Learning
+    
     # numbered_entries:
     #   - number: This is a numbered entry.
     #   - number: This is another numbered entry.
