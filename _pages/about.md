@@ -177,7 +177,7 @@ Ultimately, I aim to break through the current limitations of AI by leveraging o
 
 
 ## Awards and honors:
-* Dean's List (GIST EECS) <span style="float: right;">*2023 - 2025*</span>
+* Dean's List (GIST EECS) <span style="float: right;">*Spring 2025*</span>
 * 2024 ICPC Seoul Regional - 63rd <span style="float: right;">*2024-11*</span>
 * 2024 GIST Algorithm Masters - 1st <span style="float: right;">*2024-05*</span>
 * Hello, BOJ 2024! - 45th <span style="float: right;">*2024-01*</span>
