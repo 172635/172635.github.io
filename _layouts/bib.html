@@ -1,0 +1,126 @@
+---
+---
+<div class="row">
+  <div class="col-sm-2 abbr">
+    {%- if entry.abbr -%}
+      {%- if site.data.venues[entry.abbr] -%}
+        {%- assign venue_style = nil -%}
+        {%- if site.data.venues[entry.abbr].color -%}
+          {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'background-color: ' -%}
+        {%- endif -%}
+        <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+      {%- else -%}
+        <abbr class="badge" {% if venue_style %}style="{{venue_style}}"{% endif %}>{{entry.abbr}}</abbr>
+      {%- endif -%}
+    {%- endif -%}
+
+    {% if entry.preview %}
+      {% if entry.preview contains '://' %}
+        <img class="preview img-fluid rounded z-depth-1" src="{{ entry.preview }}">
+      {% else %}
+        <img class="preview img-fluid rounded z-depth-1" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
+      {% endif %}
+    {% endif %}
+  </div>
+
+  <div id="{{entry.key}}" class="col-sm-8">
+    <div class="title">{{entry.title}}</div>
+    
+    {% if entry.keywords %}
+    <div class="keywords" style="font-size: 0.85rem; color: #757575; margin-top: 3px; margin-bottom: 5px;">
+      <span class="badge badge-secondary" style="background-color: #5a6268; padding: 2px 5px; font-weight: 500;">Keywords</span> {{entry.keywords}}
+    </div>
+    {% endif %}
+
+    <div class="author">
+      {% assign author_array_size = entry.author_array | size %}
+      {% assign author_array_limit = author_array_size %}
+      {% if site.max_author_limit and author_array_size > site.max_author_limit %}
+        {% assign author_array_limit = site.max_author_limit %}
+      {% endif %}
+
+      {%- for author in entry.author_array limit: author_array_limit -%}
+        {%- assign author_is_self = false -%}
+        {%- assign author_last_name = author.last | remove: "¶" | remove: "*" | remove: "†" | remove: "^" -%}
+        {%- if site.scholar.last_name contains author_last_name -%}
+          {%- if site.scholar.first_name contains author.first -%}
+            {%- assign author_is_self = true -%}
+          {%- endif -%}
+        {%- endif -%}
+        
+        {%- assign coauthor_url = nil -%}
+        {%- assign clean_last_name = author_last_name | downcase | remove: " " -%} {%- if site.data.coauthors[clean_last_name] -%}
+          {%- for coauthor in site.data.coauthors[clean_last_name] -%}
+            {%- if coauthor.firstname contains author.first -%}
+              {%- assign coauthor_url = coauthor.url -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+
+        {%- if forloop.length > 1 -%}
+          {%- if forloop.first == false -%},&nbsp;{%- endif -%}
+          {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
+        {%- endif -%}
+        
+        {%- if author_is_self -%}
+          <em><strong>{{author.first}} {{author.last}}</strong></em>
+        {%- else -%}
+          {%- if coauthor_url -%}
+            <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>
+          {%- else -%}
+            {{author.first}} {{author.last}}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      
+      {%- assign more_authors = author_array_size | minus: author_array_limit -%}
+      {%- if more_authors > 0 -%}
+        {%- if more_authors == 1 -%}
+          {%- assign more_authors_text = "and 1 more author" -%}
+        {%- else -%}
+          {%- assign more_authors_text = "and " | append: more_authors | append: " more authors" -%}
+        {%- endif -%}
+        <a href="#" class="more-authors" data-toggle="collapse" data-target="#{{entry.key}}-more-authors" aria-expanded="false" aria-controls="{{entry.key}}-more-authors">{{more_authors_text}}</a>
+      {%- endif -%}
+    </div>
+
+    <div class="periodical">
+      {% if entry.type == "article" %}
+        <em>{{entry.journal}}</em>
+      {% elsif entry.type == "inproceedings" %}
+        <em>In {{entry.booktitle}}</em>
+      {% endif %}
+      {% if entry.year %}
+        , {{entry.year}}
+      {% endif %}
+    </div>
+
+    {% if entry.note %}
+    <div class="note">
+      {{entry.note}}
+    </div>
+    {% endif %}
+
+    <div class="links">
+      {% if entry.arxiv %}
+        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+      {% endif %}
+      {% if entry.code %}
+        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+      {% endif %}
+      {% if entry.website %}
+        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+      {% endif %}
+      {% if entry.award %}
+        <a class="award btn btn-sm z-depth-0" role="button">Award</a>
+      {% endif %}
+    </div>
+
+    {% if entry.award %}
+    <div class="award hidden">
+      <p>{{ entry.award }}</p>
+    </div>
+    {% endif %}
+  </div>
+</div>

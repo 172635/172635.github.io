@@ -126,7 +126,7 @@ latest_posts:
 
 Hello, I am a fourth-year undergraduate student majoring in **Computer Science** and **Mathematical Sciences** at the Gwangju Institute of Science and Technology (GIST). I am currently working as an undergraduated researcher in the <a href="https://sundong.kim/publications/">DataScience Lab</a>, advised by Prof. Sundong Kim.
 
-My ultimate research goal is to realize robust **Artificial General Intelligence (AGI)** capable of autonomously analyzing underlying rules and adapting to unseen out-of-distribution (OOD) environments by leveraging prior knowledge and preference/dispreference awareness. 
+My ultimate research goal is to realize robust **Artificial General Intelligence (AGI)** capable of autonomously analyzing underlying rules and adapting to unseen Out-of-Distribution (OOD) environments by leveraging prior knowledge and preference/dispreference awareness. 
 
 To achieve this, my current research interests include below two core directions:
 
@@ -148,8 +148,9 @@ Ultimately, I aim to break through the current limitations of AI by leveraging o
 
 <div style="display: flex; justify-content: center; align-items: center;">
   <div>
-    <a href="mailto:hojun172@gm.gist.ac.kr">Mail</a> &#124; 
-    <a href="/assets/pdf/Hojun_Yi_CV.pdf" target="_blank">CV</a> &#124; 
+    <a href="mailto:hojun172@gm.gist.ac.kr">Mail</a> &#124;
+    <a href="mailto:hojun172635@gmail.com">Gmail</a> &#124; 
+    <a href="/assets/pdf/Hojun_Yi_CV.pdf" target="_blank">CV (Jun 2026)</a> &#124; 
     <a href="https://github.com/172635" target="_blank">GitHub</a> &#124; 
     <a href="https://scholar.google.com/citations?user=92gRj0wAAAAJ" target="_blank">Google Scholar</a>
   </div>
@@ -173,7 +174,7 @@ Ultimately, I aim to break through the current limitations of AI by leveraging o
 * TRACED: Transition-aware Regret Approximation with Co-learnability for Environment Design
   * Authors : G. Cho, J. Im, J. Lee, ***H. Yi***, S. Kim, S. Kim
   * <a href="https://iclr.cc/virtual/2026/poster/10010241">ICLR 2026</a>, CoRL workshop 2025
-  * [[Arxiv]]("https://arxiv.org/pdf/2506.19997") [[Code]]("https://github.com/Cho-Geonwoo/traced") [[Website]]("https://geonwoo.me/traced/")
+  * <a href="https://arxiv.org/pdf/2506.19997">[Paper]</a> <a href="https://github.com/Cho-Geonwoo/traced">[Code]</a> <a href="https://geonwoo.me/traced/">[Website]</a>
 
 
 ## Awards and honors:
