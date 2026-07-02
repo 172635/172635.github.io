@@ -15,11 +15,13 @@
     {%- endif -%}
 
     {% if entry.preview %}
-      {% if entry.preview contains '://' %}
-        <img class="preview img-fluid rounded z-depth-1" src="{{ entry.preview }}">
-      {% else %}
-        <img class="preview img-fluid rounded z-depth-1" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
-      {% endif %}
+      <div class="preview-container" style="width: 100%; max-width: 150px; margin-bottom: 10px;">
+        {% if entry.preview contains '://' %}
+          <img class="preview img-fluid rounded z-depth-1" src="{{ entry.preview }}" style="width: 100%; height: auto; display: block;">
+        {% else %}
+          <img class="preview img-fluid rounded z-depth-1" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}" style="width: 100%; height: auto; display: block;">
+        {% endif %}
+      </div>
     {% endif %}
   </div>
 
