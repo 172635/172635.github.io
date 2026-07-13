@@ -159,8 +159,8 @@ Ultimately, I aim to break through the current limitations of AI by leveraging o
 ## Education
 
 * **B.S. in Electrical Engineering and Computer Science** GIST(Gwangju Institute of Science and Technology) <span style="float: right;">*2023 - Present*</span>
-  * Expected Cum Laude graduation in Aug 2027, Total GPA: 4.16/4.5
-  * Major(EECS) GPA: 4.32, Double Major(Mathematical Sciences): 4.20
+  * Expected Cum Laude graduation in Aug 2027, Total GPA: 4.20/4.5
+  * Major(EECS) GPA: 4.34, Double Major(Mathematical Sciences): 4.29
 
 ## Experience
 * **Undergraduated Research Intern** - DataScience Lab (Advised by Prof. Sundong Kim) in GIST <span style="float: right;">*2025 - Present*</span>
