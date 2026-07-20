@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-07-06'
+  last_updated: '2026-07-20'
 papers:
   92gRj0wAAAAJ:u-x6o8ySG0sC:
-    citations: 0
+    citations: 1
     title: 'TRACED: Transition-aware Regret Approximation with Co-learnability for Environment Design'
     year: '2025'
